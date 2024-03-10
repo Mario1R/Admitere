@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ReSharper disable Xaml.BindingWithContextNotResolved -->
+
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:material="http://schemas.enisn-projects.io/dotnet/maui/uraniumui/material"
+             x:Class="Admitere.Views.ViewAfisareElevi">
+    
+    <Border Margin="60,105,60,133" StrokeShape="Rectangle" Stroke="Transparent">
+        <ScrollView BackgroundColor="Transparent" Orientation="Vertical">
+            <material:DataGrid ItemsSource="{Binding Elevi}" BackgroundColor="#EEEEEE" LineSeparatorColor="#323643" UseAutoColumns="False">
+                <material:DataGrid.TitleTemplate>
+                    <DataTemplate>
+                        <Label TextColor="#323643" FontSize="15" FontFamily="Robo" Text="{Binding Value}" Margin="18.5,10,18.5,15" VerticalOptions="Center"  HorizontalOptions="Center"/>
+                    </DataTemplate>
+                </material:DataGrid.TitleTemplate>
+                <material:DataGrid.Columns>
+                    
+                    <material:DataGridColumn Title="Nr.Crt.">
+                        <material:DataGridColumn.CellItemTemplate>
+                            <DataTemplate>
+                                <material:ButtonView PressedCommand="{Binding InfoElevCommand}">
+                                    <Label TextColor="#323643" FontSize="15" FontFamily="Robo" Text="{Binding NrCrt}" Margin="0,16,0,16" VerticalOptions="Center" HorizontalOptions="Center"/>
+                                </material:ButtonView>
+                            </DataTemplate>
+                        </material:DataGridColumn.CellItemTemplate>
+                    </material:DataGridColumn>
+                    
+                    <material:DataGridColumn Title="Cod" Width="100">
+                        <material:DataGridColumn.CellItemTemplate>
+                            <DataTemplate>
+                                <material:ButtonView PressedCommand="{Binding InfoElevCommand}">
+                                    <Label TextColor="#323643" FontSize="15" FontFamily="Robo" Text="{Binding Cod}" Margin="0,16,0,16" VerticalOptions="Center" HorizontalOptions="Center"/>
+                                </material:ButtonView>
+                            </DataTemplate>
+                        </material:DataGridColumn.CellItemTemplate>
+                    </material:DataGridColumn>
+                    
+                    <material:DataGridColumn Title="Nume" Width="120">
+                        <material:DataGridColumn.CellItemTemplate>
+                            <DataTemplate>
+                                <material:ButtonView PressedCommand="{Binding InfoElevCommand}">
+                                    <Label TextColor="#323643" FontSize="15" FontFamily="Robo" Text="{Binding Nume}" Margin="0,16,0,16" VerticalOptions="Center" HorizontalOptions="Center"/>
+                                </material:ButtonView>    
+                            </DataTemplate>
+                        </material:DataGridColumn.CellItemTemplate>
+                    </material:DataGridColumn>
+                    
+                    <material:DataGridColumn Title="Prenume" Width="125">
+                        <material:DataGridColumn.CellItemTemplate>
+                            <DataTemplate>
+                                <material:ButtonView PressedCommand="{Binding InfoElevCommand}">
+                                    <Label TextColor="#323643" FontSize="15" FontFamily="Robo" Text="{Binding Prenume}" Margin="0,16,0,16" VerticalOptions="Center" HorizontalOptions="Center"/>
+                                </material:ButtonView>    
+                            </DataTemplate>
+                        </material:DataGridColumn.CellItemTemplate>
+                    </material:DataGridColumn>
+                    
+                    <material:DataGridColumn Title="Matematică">
+                        <material:DataGridColumn.CellItemTemplate>
+                            <DataTemplate>
+                                <material:ButtonView PressedCommand="{Binding InfoElevCommand}">
+                                    <Label TextColor="#323643" FontSize="15" FontFamily="Robo" Text="{Binding MateInit, StringFormat='{0:F2}'}" Margin="0,16,0,16" VerticalOptions="Center" HorizontalOptions="Center"/>
+                                </material:ButtonView>    
+                            </DataTemplate>
+                        </material:DataGridColumn.CellItemTemplate>
+                    </material:DataGridColumn>
+                    
+                    <material:DataGridColumn Title="Română">
+                        <material:DataGridColumn.CellItemTemplate>
+                            <DataTemplate>
+                                <material:ButtonView PressedCommand="{Binding InfoElevCommand}">
+                                    <Label TextColor="#323643" FontSize="15" FontFamily="Robo" Text="{Binding RoInit, StringFormat='{0:F2}'}" Margin="0,16,0,16" VerticalOptions="Center" HorizontalOptions="Center"/>
+                                </material:ButtonView>    
+                            </DataTemplate>
+                        </material:DataGridColumn.CellItemTemplate>
+                    </material:DataGridColumn>
+
+                    <material:DataGridColumn Title="Media">
+                        <material:DataGridColumn.CellItemTemplate>
+                            <DataTemplate>
+                                <material:ButtonView PressedCommand="{Binding InfoElevCommand}">
+                                    <Label TextColor="#323643" FontSize="15" FontFamily="Robo" Text="{Binding MediaInit, StringFormat='{0:F2}'}" Margin="0,16,0,16" VerticalOptions="Center" HorizontalOptions="Center"/>
+                                </material:ButtonView>    
+                            </DataTemplate>
+                        </material:DataGridColumn.CellItemTemplate>
+                    </material:DataGridColumn>
+                    
+                    <material:DataGridColumn Title="Contestat">
+                        <material:DataGridColumn.CellItemTemplate>
+                            <DataTemplate>
+                                <material:ButtonView PressedCommand="{Binding InfoElevCommand}">
+                                    <Label TextColor="#323643" FontSize="15" FontFamily="Robo" Margin="0,16,0,16" HorizontalOptions="Center" VerticalOptions="Center">
+                                        <Label.Triggers>
+                                            <DataTrigger TargetType="Label" Binding="{Binding Contestat}" Value="True">
+                                                <Setter Property="Text" Value="Da"/>
+                                            </DataTrigger>
+                                            <DataTrigger TargetType="Label" Binding="{Binding Contestat}" Value="False">
+                                                <Setter Property="Text" Value="Nu"/>
+                                            </DataTrigger>
+                                        </Label.Triggers>
+                                    </Label>
+                                </material:ButtonView>    
+                            </DataTemplate>
+                        </material:DataGridColumn.CellItemTemplate>
+                    </material:DataGridColumn>
+                    
+                    <material:DataGridColumn Title="Rezultat">
+                        <material:DataGridColumn.CellItemTemplate>
+                            <DataTemplate>
+                                <material:ButtonView PressedCommand="{Binding InfoElevCommand}">
+                                    <Label TextColor="#323643" FontSize="15" FontFamily="Robo" Margin="0,16,0,16" HorizontalOptions="Center" VerticalOptions="Center">
+                                        <Label.Triggers>
+                                            <DataTrigger TargetType="Label" Binding="{Binding Rezultat}" Value="True">
+                                                <Setter Property="Text" Value="Admis"/>
+                                            </DataTrigger>
+                                            <DataTrigger TargetType="Label" Binding="{Binding Rezultat}" Value="False">
+                                                <Setter Property="Text" Value="Respins"/>
+                                            </DataTrigger>
+                                        </Label.Triggers>
+                                    </Label>
+                                </material:ButtonView>    
+                            </DataTemplate>
+                        </material:DataGridColumn.CellItemTemplate>
+                    </material:DataGridColumn>
+                </material:DataGrid.Columns>
+            </material:DataGrid>
+        </ScrollView>
+    </Border>
+    
+</ContentView>

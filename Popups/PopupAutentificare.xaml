@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<mopups:PopupPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mopups="clr-namespace:Mopups.Pages;assembly=Mopups"
+             xmlns:material="http://schemas.enisn-projects.io/dotnet/maui/uraniumui/material"
+             xmlns:validation="clr-namespace:InputKit.Shared.Validations;assembly=InputKit.Maui"
+             x:Class="Admitere.Popups.PopupAutentificare"
+             BackgroundColor="#80000000"
+             CloseWhenBackgroundIsClicked="False">
+    
+    <Border BackgroundColor="#1D242B" Stroke="#F7F7F7" WidthRequest="430" HeightRequest="350" StrokeShape="Rectangle" VerticalOptions="Center" HorizontalOptions="Center">
+        <Grid Margin="20,15,20,25" RowDefinitions="*,Auto" ColumnDefinitions="*,*" ColumnSpacing="50">
+            <StackLayout Margin="50,0,0,0" Spacing="2.75" Orientation="Vertical" Grid.Row="0" Grid.Column="0">
+                <material:TextField Title="Nume" Text="{Binding Nume}" FontSize="17" FontFamily="Robo" WidthRequest="150"  TextColor="#EEEEEE" TitleColor="#EEEEEE" BorderColor="#EEEEEE" AccentColor="#EEEEEE">
+                    <validation:RequiredValidation/>
+                </material:TextField>
+                <material:TextField Title="Prenume" Text="{Binding Prenume}" FontSize="17" FontFamily="Robo" WidthRequest="150" TextColor="#EEEEEE" TitleColor="#EEEEEE" BorderColor="#EEEEEE" AccentColor="#EEEEEE">
+                    <validation:RequiredValidation/>
+                </material:TextField>
+                <material:TextField Title="Parola" Text="{Binding Parola}" FontSize="17" FontFamily="Robo" WidthRequest="150" TextColor="#EEEEEE" TitleColor="#EEEEEE" BorderColor="#EEEEEE" AccentColor="#EEEEEE">
+                    <validation:RequiredValidation/>
+                </material:TextField>
+            </StackLayout>
+            
+            <BoxView StyleClass="Divider" Margin="15,160,20,0" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"/>
+            
+            <VerticalStackLayout Grid.Row="1" Grid.Column="0" VerticalOptions="Center" Margin="45,0,0,0" IsVisible="{Binding EroareVizibila}">
+                <Image WidthRequest="40" Source="incomplete_circle_0fill_300weight_light.png" HorizontalOptions="Center"/>
+                <Label Text="Invalid" FontFamily="Robo" FontSize="17.5" TextColor="#f80000" HorizontalOptions="Center"/>
+            </VerticalStackLayout>
+            
+            <StackLayout Margin="0,0,50,0" Spacing="10" Orientation="Vertical" HorizontalOptions="End" Grid.Row="1" Grid.Column="1">
+                <material:ButtonView BackgroundColor="Transparent" Width="300" Style="{StaticResource PopupButton}" PressedCommand="{Binding AutentificareCommand}">
+                    <Label Text="Autentificare" FontSize="15" FontFamily="Robo"  HorizontalTextAlignment="Center"/>
+                </material:ButtonView>
+                <material:ButtonView BackgroundColor="Transparent" Style="{StaticResource PopupButton}" PressedCommand="{Binding InregistrareCommand}">
+                    <Label Text="Înregistrare" FontSize="15" FontFamily="Robo" HorizontalTextAlignment="Center"/>
+                </material:ButtonView>
+            </StackLayout>
+        </Grid>
+    </Border>
+    
+</mopups:PopupPage>

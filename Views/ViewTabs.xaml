@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Admitere.Views.ViewTabs">
+    
+    <Border BackgroundColor="#1D242B" Stroke="Transparent" StrokeThickness="0" StrokeShape="Rectangle" VerticalOptions="End">
+        <Grid ColumnDefinitions="395,100,100,*" RowDefinitions="25,20">
+            <Line Stroke="#EEEEEE" StrokeThickness="3.5" X1="-5" Y1="0" X2="1500" Y2="0" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4"/>
+            <Border BackgroundColor="#EEEEEE" Stroke="#EEEEEE" StrokeShape="RoundRectangle 0, 0, 40, 0" Grid.Row="0" Grid.Column="1" x:Name="EleviTab">
+                <Label TextColor="#1D242B" Text="Elevi" FontSize="16" FontFamily="Robo" Margin="0, 1, 0, 0" HorizontalOptions="Center">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="AfiseazaElevi"/>
+                    </Label.GestureRecognizers>
+                </Label>
+            </Border>
+            <Border BackgroundColor="#EEEEEE" Stroke="#EEEEEE" StrokeShape="RoundRectangle 0, 0, 0, 40" Grid.Row="0" Grid.Column="2" x:Name="ClaseTab">
+                <Label TextColor="#1D242B" Text="Clase" FontSize="16" FontFamily="Robo" Margin="0, 1, 0, 0" HorizontalOptions="Center">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="RepartizeazaClase"/>
+                    </Label.GestureRecognizers>
+                </Label>
+            </Border>
+        </Grid> 
+        
+    </Border>
+    
+</ContentView>

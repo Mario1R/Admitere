@@ -1,0 +1,255 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Admitere</name>
+    </assembly>
+    <members>
+        <member name="T:Admitere.Models.Elev">
+            <inheritdoc/>
+        </member>
+        <member name="F:Admitere.Models.Elev.infoElevCommand">
+            <summary>The backing field for <see cref="P:Admitere.Models.Elev.InfoElevCommand"/>.</summary>
+        </member>
+        <member name="P:Admitere.Models.Elev.InfoElevCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:Admitere.Models.Elev.InfoElev"/>.</summary>
+        </member>
+        <member name="T:Admitere.ViewModels.ViewModelAdaugareElevi">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:Admitere.ViewModels.ViewModelAdaugareElevi.Nume">
+            <inheritdoc cref="F:Admitere.ViewModels.ViewModelAdaugareElevi.nume"/>
+        </member>
+        <member name="P:Admitere.ViewModels.ViewModelAdaugareElevi.Initiala">
+            <inheritdoc cref="F:Admitere.ViewModels.ViewModelAdaugareElevi.initiala"/>
+        </member>
+        <member name="P:Admitere.ViewModels.ViewModelAdaugareElevi.Prenume">
+            <inheritdoc cref="F:Admitere.ViewModels.ViewModelAdaugareElevi.prenume"/>
+        </member>
+        <member name="P:Admitere.ViewModels.ViewModelAdaugareElevi.Scoala">
+            <inheritdoc cref="F:Admitere.ViewModels.ViewModelAdaugareElevi.scoala"/>
+        </member>
+        <member name="P:Admitere.ViewModels.ViewModelAdaugareElevi.Cod">
+            <inheritdoc cref="F:Admitere.ViewModels.ViewModelAdaugareElevi.cod"/>
+        </member>
+        <member name="P:Admitere.ViewModels.ViewModelAdaugareElevi.Cnp">
+            <inheritdoc cref="F:Admitere.ViewModels.ViewModelAdaugareElevi.cnp"/>
+        </member>
+        <member name="P:Admitere.ViewModels.ViewModelAdaugareElevi.Rezultat">
+            <inheritdoc cref="F:Admitere.ViewModels.ViewModelAdaugareElevi.rezultat"/>
+        </member>
+        <member name="F:Admitere.ViewModels.ViewModelAdaugareElevi.adaugareElevCommand">
+            <summary>The backing field for <see cref="P:Admitere.ViewModels.ViewModelAdaugareElevi.AdaugareElevCommand"/>.</summary>
+        </member>
+        <member name="P:Admitere.ViewModels.ViewModelAdaugareElevi.AdaugareElevCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Admitere.ViewModels.ViewModelAdaugareElevi.AdaugareElev"/>.</summary>
+        </member>
+        <member name="T:Admitere.ViewModels.ViewModelAfisareClase">
+            <inheritdoc/>
+        </member>
+        <member name="F:Admitere.ViewModels.ViewModelAfisareClase.afisareClaseCommand">
+            <summary>The backing field for <see cref="P:Admitere.ViewModels.ViewModelAfisareClase.AfisareClaseCommand"/>.</summary>
+        </member>
+        <member name="P:Admitere.ViewModels.ViewModelAfisareClase.AfisareClaseCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Admitere.ViewModels.ViewModelAfisareClase.AfisareClase"/>.</summary>
+        </member>
+        <member name="T:Admitere.ViewModels.ViewModelAfisareElevi">
+            <inheritdoc/>
+        </member>
+        <member name="F:Admitere.ViewModels.ViewModelAfisareElevi.afisareEleviCommand">
+            <summary>The backing field for <see cref="P:Admitere.ViewModels.ViewModelAfisareElevi.AfisareEleviCommand"/>.</summary>
+        </member>
+        <member name="P:Admitere.ViewModels.ViewModelAfisareElevi.AfisareEleviCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Admitere.ViewModels.ViewModelAfisareElevi.AfisareElevi"/>.</summary>
+        </member>
+        <member name="T:Admitere.ViewModels.ViewModelAutentificare">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:Admitere.ViewModels.ViewModelAutentificare.EroareVizibila">
+            <inheritdoc cref="F:Admitere.ViewModels.ViewModelAutentificare.eroareVizibila"/>
+        </member>
+        <member name="P:Admitere.ViewModels.ViewModelAutentificare.Nume">
+            <inheritdoc cref="F:Admitere.ViewModels.ViewModelAutentificare.nume"/>
+        </member>
+        <member name="P:Admitere.ViewModels.ViewModelAutentificare.Prenume">
+            <inheritdoc cref="F:Admitere.ViewModels.ViewModelAutentificare.prenume"/>
+        </member>
+        <member name="P:Admitere.ViewModels.ViewModelAutentificare.Parola">
+            <inheritdoc cref="F:Admitere.ViewModels.ViewModelAutentificare.parola"/>
+        </member>
+        <member name="F:Admitere.ViewModels.ViewModelAutentificare.autentificareCommand">
+            <summary>The backing field for <see cref="P:Admitere.ViewModels.ViewModelAutentificare.AutentificareCommand"/>.</summary>
+        </member>
+        <member name="P:Admitere.ViewModels.ViewModelAutentificare.AutentificareCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Admitere.ViewModels.ViewModelAutentificare.Autentificare"/>.</summary>
+        </member>
+        <member name="F:Admitere.ViewModels.ViewModelAutentificare.inregistrareCommand">
+            <summary>The backing field for <see cref="P:Admitere.ViewModels.ViewModelAutentificare.InregistrareCommand"/>.</summary>
+        </member>
+        <member name="P:Admitere.ViewModels.ViewModelAutentificare.InregistrareCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Admitere.ViewModels.ViewModelAutentificare.Inregistrare"/>.</summary>
+        </member>
+        <member name="T:Admitere.ViewModels.ViewModelInfo">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:Admitere.ViewModels.ViewModelInfo.Nume">
+            <inheritdoc cref="F:Admitere.ViewModels.ViewModelInfo.nume"/>
+        </member>
+        <member name="P:Admitere.ViewModels.ViewModelInfo.Initiala">
+            <inheritdoc cref="F:Admitere.ViewModels.ViewModelInfo.initiala"/>
+        </member>
+        <member name="P:Admitere.ViewModels.ViewModelInfo.Prenume">
+            <inheritdoc cref="F:Admitere.ViewModels.ViewModelInfo.prenume"/>
+        </member>
+        <member name="P:Admitere.ViewModels.ViewModelInfo.Scoala">
+            <inheritdoc cref="F:Admitere.ViewModels.ViewModelInfo.scoala"/>
+        </member>
+        <member name="P:Admitere.ViewModels.ViewModelInfo.Cod">
+            <inheritdoc cref="F:Admitere.ViewModels.ViewModelInfo.cod"/>
+        </member>
+        <member name="P:Admitere.ViewModels.ViewModelInfo.Cnp">
+            <inheritdoc cref="F:Admitere.ViewModels.ViewModelInfo.cnp"/>
+        </member>
+        <member name="P:Admitere.ViewModels.ViewModelInfo.MateInit">
+            <inheritdoc cref="F:Admitere.ViewModels.ViewModelInfo.mateInit"/>
+        </member>
+        <member name="P:Admitere.ViewModels.ViewModelInfo.MatePost">
+            <inheritdoc cref="F:Admitere.ViewModels.ViewModelInfo.matePost"/>
+        </member>
+        <member name="P:Admitere.ViewModels.ViewModelInfo.RoInit">
+            <inheritdoc cref="F:Admitere.ViewModels.ViewModelInfo.roInit"/>
+        </member>
+        <member name="P:Admitere.ViewModels.ViewModelInfo.RoPost">
+            <inheritdoc cref="F:Admitere.ViewModels.ViewModelInfo.roPost"/>
+        </member>
+        <member name="P:Admitere.ViewModels.ViewModelInfo.MediaInit">
+            <inheritdoc cref="F:Admitere.ViewModels.ViewModelInfo.mediaInit"/>
+        </member>
+        <member name="P:Admitere.ViewModels.ViewModelInfo.MediaPost">
+            <inheritdoc cref="F:Admitere.ViewModels.ViewModelInfo.mediaPost"/>
+        </member>
+        <member name="P:Admitere.ViewModels.ViewModelInfo.Contestat">
+            <inheritdoc cref="F:Admitere.ViewModels.ViewModelInfo.contestat"/>
+        </member>
+        <member name="P:Admitere.ViewModels.ViewModelInfo.Rezultat">
+            <inheritdoc cref="F:Admitere.ViewModels.ViewModelInfo.rezultat"/>
+        </member>
+        <member name="F:Admitere.ViewModels.ViewModelInfo.stergereElevCommand">
+            <summary>The backing field for <see cref="P:Admitere.ViewModels.ViewModelInfo.StergereElevCommand"/>.</summary>
+        </member>
+        <member name="P:Admitere.ViewModels.ViewModelInfo.StergereElevCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Admitere.ViewModels.ViewModelInfo.StergereElev"/>.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Nume">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Nume" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Initiala">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Initiala" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Prenume">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Prenume" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Scoala">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Scoala" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Cod">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Cod" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Cnp">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Cnp" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Rezultat">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Rezultat" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.EroareVizibila">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "EroareVizibila" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Parola">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Parola" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.MateInit">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "MateInit" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.MatePost">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "MatePost" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.RoInit">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "RoInit" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.RoPost">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "RoPost" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.MediaInit">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "MediaInit" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.MediaPost">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "MediaPost" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Contestat">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Contestat" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Nume">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Nume" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Initiala">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Initiala" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Prenume">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Prenume" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Scoala">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Scoala" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Cod">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Cod" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Cnp">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Cnp" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Rezultat">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Rezultat" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.EroareVizibila">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "EroareVizibila" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Parola">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Parola" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.MateInit">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "MateInit" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.MatePost">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "MatePost" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.RoInit">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "RoInit" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.RoPost">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "RoPost" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.MediaInit">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "MediaInit" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.MediaPost">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "MediaPost" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Contestat">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Contestat" generated properties.</summary>
+        </member>
+    </members>
+</doc>

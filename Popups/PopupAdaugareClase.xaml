@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<mopups:PopupPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mopups="clr-namespace:Mopups.Pages;assembly=Mopups"
+             xmlns:material="http://schemas.enisn-projects.io/dotnet/maui/uraniumui/material"
+             x:Class="Admitere.Popups.PopupAdaugareClase"
+             BackgroundColor="#80000000">
+    
+    <Border BackgroundColor="#1D242B" Stroke="#F7F7F7" WidthRequest="300" HeightRequest="150" StrokeShape="Rectangle" VerticalOptions="Center" HorizontalOptions="Center">
+        
+        <StackLayout Margin="10, 15,10,10" Spacing="5" Orientation="Vertical">
+            <Label TextColor="#EEEEEE" Text="Numărul de clase disponibile" FontFamily="Robo" HorizontalOptions="Center"/>
+            
+            <Grid RowDefinitions="Auto" ColumnDefinitions="*,30,*">
+                <BoxView StyleClass="Divider" Grid.Row="0" Grid.Column="0"/>
+                <Image Source="safety_divider_0fill_300weight.png" Grid.Row="0" Grid.Column="1">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Tranzitie"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <BoxView StyleClass="Divider" Grid.Row="0" Grid.Column="2"/>
+            </Grid>
+            
+            <material:TextField Margin="110,0,110,0" FontFamily="Robo" TextColor="#EEEEEE" BorderColor="#EEEEEE" AccentColor="#EEEEEE" Keyboard="Numeric" x:Name="NumarClase"/>
+        </StackLayout>
+    </Border>
+    
+</mopups:PopupPage>

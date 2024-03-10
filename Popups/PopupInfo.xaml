@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<mopups:PopupPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mopups="clr-namespace:Mopups.Pages;assembly=Mopups"
+             xmlns:material="http://schemas.enisn-projects.io/dotnet/maui/uraniumui/material"
+             x:Class="Admitere.Popups.PopupInfo"
+             BackgroundColor="#80000000">
+    
+    <Border BackgroundColor="#1D242B" Stroke="#F7F7F7" WidthRequest="515" HeightRequest="350" StrokeShape="Rectangle"  VerticalOptions="Center" HorizontalOptions="Center">
+        <Grid Margin="25,15,20,25" ColumnSpacing="95" RowDefinitions="*,Auto" ColumnDefinitions="*,*" >
+            <StackLayout Spacing="2.75" Orientation="Vertical" Grid.Row="0" Grid.Column="0">
+                <Label TextColor="#EEEEEE" FontSize="17" FontFamily="Robo" Text="{Binding Nume, StringFormat='Nume: {0}'}"/>
+                <Label TextColor="#EEEEEE" FontSize="17" FontFamily="Robo" Text="{Binding Initiala, StringFormat='Inițiala: {0}'}"/>
+                <Label TextColor="#EEEEEE" FontSize="17" FontFamily="Robo" Text="{Binding Prenume, StringFormat='Prenume: {0}'}"/>
+                <Label TextColor="#EEEEEE" FontSize="17" FontFamily="Robo" Text="{Binding Cnp, StringFormat='CNP: {0}'}"/>
+                <Label TextColor="#EEEEEE" FontSize="17" FontFamily="Robo" Text="{Binding Cod, StringFormat='Cod: {0}'}"/>
+                <Label TextColor="#EEEEEE" FontSize="17" FontFamily="Robo" Text="{Binding Scoala, StringFormat='Școala: {0}'}"/>
+            </StackLayout>
+            <StackLayout Margin="0,20,0,0" Spacing="35" Orientation="Vertical"  Grid.Row="0" Grid.Column="1">
+                <StackLayout Spacing="0" Orientation="Vertical">
+                    <Label TextColor="#EEEEEE" FontSize="17" FontFamily="Robo" Text="{Binding MateInit, StringFormat='Matematică: {0}'}"/>
+                    <Label TextColor="#EEEEEE" FontSize="17" FontFamily="Robo" Text="{Binding MatePost, StringFormat='Matematică (contestație): {0}'}"/>
+                </StackLayout>
+                <StackLayout Spacing="0" Orientation="Vertical">
+                    <Label TextColor="#EEEEEE" FontSize="17" FontFamily="Robo" Text="{Binding RoInit, StringFormat='Română: {0}'}"/>
+                    <Label TextColor="#EEEEEE" FontSize="17" FontFamily="Robo" Text="{Binding RoPost, StringFormat='Română (contestație): {0}'}"/>
+                </StackLayout>
+            </StackLayout>
+            
+            <BoxView StyleClass="Divider" Margin="20,150,45,0" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"/>
+            
+            <StackLayout Orientation="Vertical" HorizontalOptions="Start" Spacing="0" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Margin="35,2.5,0,0">
+                <Label TextColor="#EEEEEE" FontSize="17" FontFamily="Robo" Text="{Binding MediaInit, StringFormat='Media Inițială: {0}'}"/>
+                <Label TextColor="#EEEEEE" FontSize="17" FontFamily="Robo" Text="{Binding MediaPost, StringFormat='Media Finală: {0}'}"/>
+                <Label TextColor="#EEEEEE" FontSize="17" FontFamily="Robo">
+                    <Label.Triggers>
+                        <DataTrigger TargetType="Label" Binding="{Binding Contestat}" Value="True">
+                            <Setter Property="Text" Value="Contestat: Da"/>
+                        </DataTrigger>
+                        <DataTrigger TargetType="Label" Binding="{Binding Contestat}" Value="False">
+                            <Setter Property="Text" Value="Contestat: Nu"/>
+                        </DataTrigger>
+                    </Label.Triggers>
+                </Label>
+                <Label TextColor="#EEEEEE" FontSize="17" FontFamily="Robo">
+                    <Label.Triggers>
+                        <DataTrigger TargetType="Label" Binding="{Binding Rezultat}" Value="True">
+                            <Setter Property="Text" Value="Rezultat: Admis"/>
+                        </DataTrigger>
+                        <DataTrigger TargetType="Label" Binding="{Binding Rezultat}" Value="False">
+                            <Setter Property="Text" Value="Rezultat: Respins"/>
+                        </DataTrigger>
+                    </Label.Triggers>
+                </Label>
+            </StackLayout>
+            <StackLayout Margin="0,20,75,0" Spacing="10" Orientation="Vertical" HorizontalOptions="End"  Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2">
+                <material:ButtonView BackgroundColor="Transparent" Style="{StaticResource PopupButton}" PressedCommand="{Binding StergereElevCommand}">
+                    <Label Text="Ștergere" FontSize="17" FontFamily="Robo" HorizontalTextAlignment="Center"/>
+                </material:ButtonView>
+            </StackLayout>
+        </Grid>
+    </Border>
+    
+</mopups:PopupPage>
