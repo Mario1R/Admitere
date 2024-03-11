@@ -364,6 +364,12 @@
     <AppxPackagedFile Include="C:\Users\raduu\.nuget\packages\bouncycastle.cryptography\2.1.1\lib\net6.0\BouncyCastle.Cryptography.dll">
       <PackagePath>BouncyCastle.Cryptography.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\raduu\.nuget\packages\communitytoolkit.maui\7.0.1\lib\net8.0-windows10.0.19041\CommunityToolkit.Maui.dll">
+      <PackagePath>CommunityToolkit.Maui.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\raduu\.nuget\packages\communitytoolkit.maui.core\7.0.1\lib\net8.0-windows10.0.19041\CommunityToolkit.Maui.Core.dll">
+      <PackagePath>CommunityToolkit.Maui.Core.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\raduu\.nuget\packages\communitytoolkit.mvvm\8.2.2\lib\net6.0\CommunityToolkit.Mvvm.dll">
       <PackagePath>CommunityToolkit.Mvvm.dll</PackagePath>
     </AppxPackagedFile>
@@ -501,6 +507,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\raduu\.nuget\packages\sqlitepclraw.provider.e_sqlite3\2.1.7\lib\net6.0-windows7.0\SQLitePCLRaw.provider.e_sqlite3.dll">
       <PackagePath>SQLitePCLRaw.provider.e_sqlite3.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\raduu\.nuget\packages\system.speech\8.0.0-rc.2.23479.6\runtimes\win\lib\net8.0\System.Speech.dll">
+      <PackagePath>System.Speech.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\raduu\.nuget\packages\uraniumui\2.7.4\lib\net8.0-windows10.0.19041\UraniumUI.dll">
       <PackagePath>UraniumUI.dll</PackagePath>

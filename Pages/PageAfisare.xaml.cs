@@ -1,5 +1,6 @@
 using Admitere.DBs;
 using Admitere.Popups;
+using CommunityToolkit.Maui.Storage;
 using GemBox.Spreadsheet;
 using Mopups.Services;
 
@@ -51,6 +52,9 @@ public partial class PageAfisare
 
     private async void CreateExcel(object? sender, TappedEventArgs e)
     {
+        //ExcelIcon.ScaleTo(1.1);
+        //ExcelIcon.ScaleTo(1.0);
+        
         SpreadsheetInfo.SetLicense("FREE-LIMITED-KEY");
         var workbook = new ExcelFile();
         workbook.Worksheets.Add("Elevi");
@@ -72,9 +76,10 @@ public partial class PageAfisare
             workbook.Worksheets[0].Cells["K" + i].Value = "Matematică (contestație)";
             workbook.Worksheets[0].Cells["L" + i].Value = "Română (contestație)";
             workbook.Worksheets[0].Cells["M" + i].Value = "Media Finală";
-            workbook.Worksheets[0].Cells["N" + i].Value = "Contestat";
-            workbook.Worksheets[0].Cells["O" + i].Value = "Rezultat";
-            workbook.Worksheets[0].Cells["P" + i].Value = "Clasa";
+            workbook.Worksheets[0].Cells["N" + i].Value = "Absent";
+            workbook.Worksheets[0].Cells["O" + i].Value = "Contestat";
+            workbook.Worksheets[0].Cells["P" + i].Value = "Rezultat";
+            workbook.Worksheets[0].Cells["Q" + i].Value = "Clasa";
             
             foreach (var elev in await AdmitereDatabase.AfisareEleviAsync())
             {
@@ -92,9 +97,10 @@ public partial class PageAfisare
                 workbook.Worksheets[0].Cells["K" + i].Value = elev.MatePost;
                 workbook.Worksheets[0].Cells["L" + i].Value = elev.RoPost;
                 workbook.Worksheets[0].Cells["M" + i].Value = elev.MediaPost;
-                workbook.Worksheets[0].Cells["N" + i].Value = elev.Contestat ? "DA" : "NU";
-                workbook.Worksheets[0].Cells["O" + i].Value = elev.Rezultat ? "DA" : "NU";
-                workbook.Worksheets[0].Cells["P" + i].Value = elev.Clasa;
+                workbook.Worksheets[0].Cells["N" + i].Value = elev.Absent ? "DA" : "NU";
+                workbook.Worksheets[0].Cells["O" + i].Value = elev.Contestat ? "DA" : "NU";
+                workbook.Worksheets[0].Cells["P" + i].Value = elev.Rezultat ? "DA" : "NU";
+                workbook.Worksheets[0].Cells["Q" + i].Value = elev.Clasa;
             }
         }
         else if(Back.IsVisible)
@@ -108,6 +114,39 @@ public partial class PageAfisare
                 workbook.Worksheets[1].Cells[elev.Clasa + i++].Value = elev.Cod;
             }
         }
-        workbook.Save(Constants.EleviExcelPath);
+        
+        var folder = await FolderPicker.PickAsync(default);
+        var filePath = Path.Combine(folder.Folder.Path, "Admitere.xlsx");
+        workbook.Save(filePath);
+    }
+
+    private void PointerInExcel(object? sender, PointerEventArgs e)
+    {
+        ExcelIcon.ScaleTo(1.1, 100);
+    }
+
+    private void PointerOutExcel(object? sender, PointerEventArgs e)
+    {
+        ExcelIcon.ScaleTo(1.0, 100);
+    }
+
+    private void PointerInClase(object? sender, PointerEventArgs e)
+    {
+        Forth.ScaleTo(1.1, 100);
+    }
+
+    private void PointerOutClase(object? sender, PointerEventArgs e)
+    {
+        Forth.ScaleTo(1.0, 100);
+    }
+
+    private void PointerInElevi(object? sender, PointerEventArgs e)
+    {
+        Back.ScaleTo(1.1, 100);
+    }
+
+    private void PointerOutElevi(object? sender, PointerEventArgs e)
+    {
+        Back.ScaleTo(1.0, 100);
     }
 }

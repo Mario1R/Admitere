@@ -21,6 +21,7 @@
                     </Label.GestureRecognizers>
                 </Label>
             </Border>
+            <Label Margin="5,0,0,0" Text="Drepturi de autor © Radu Mario" FontSize="14" FontFamily="Robo" TextColor="#80EEEEEE" HorizontalOptions="Start" Grid.Row="1"/>
         </Grid> 
         
     </Border>

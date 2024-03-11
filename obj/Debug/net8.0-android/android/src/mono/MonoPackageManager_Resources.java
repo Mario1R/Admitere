@@ -5,6 +5,8 @@ public class MonoPackageManager_Resources {
 		"Admitere.dll",
 		"Maui.DataGrid.dll",
 		"AsyncAwaitBestPractices.dll",
+		"CommunityToolkit.Maui.dll",
+		"CommunityToolkit.Maui.Core.dll",
 		"CommunityToolkit.Mvvm.dll",
 		"GemBox.Spreadsheet.dll",
 		"GoogleGson.dll",

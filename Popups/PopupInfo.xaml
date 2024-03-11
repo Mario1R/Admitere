@@ -35,6 +35,16 @@
                 <Label TextColor="#EEEEEE" FontSize="17" FontFamily="Robo" Text="{Binding MediaPost, StringFormat='Media Finală: {0}'}"/>
                 <Label TextColor="#EEEEEE" FontSize="17" FontFamily="Robo">
                     <Label.Triggers>
+                        <DataTrigger TargetType="Label" Binding="{Binding Absent}" Value="True">
+                            <Setter Property="Text" Value="Absent: Da"/>
+                        </DataTrigger>
+                        <DataTrigger TargetType="Label" Binding="{Binding Absent}" Value="False">
+                            <Setter Property="Text" Value="Absent: Nu"/>
+                        </DataTrigger>
+                    </Label.Triggers>
+                </Label>
+                <Label TextColor="#EEEEEE" FontSize="17" FontFamily="Robo">
+                    <Label.Triggers>
                         <DataTrigger TargetType="Label" Binding="{Binding Contestat}" Value="True">
                             <Setter Property="Text" Value="Contestat: Da"/>
                         </DataTrigger>
@@ -54,7 +64,7 @@
                     </Label.Triggers>
                 </Label>
             </StackLayout>
-            <StackLayout Margin="0,20,75,0" Spacing="10" Orientation="Vertical" HorizontalOptions="End"  Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2">
+            <StackLayout Margin="0,35,75,0" Spacing="10" Orientation="Vertical" HorizontalOptions="End"  Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2">
                 <material:ButtonView BackgroundColor="Transparent" Style="{StaticResource PopupButton}" PressedCommand="{Binding StergereElevCommand}">
                     <Label Text="Ștergere" FontSize="17" FontFamily="Robo" HorizontalTextAlignment="Center"/>
                 </material:ButtonView>

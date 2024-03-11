@@ -5,7 +5,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:material="http://schemas.enisn-projects.io/dotnet/maui/uraniumui/material"
     xmlns:uranium="http://schemas.enisn-projects.io/dotnet/maui/uraniumui">
-  
+    
     <Style x:Key = "TabsButton" TargetType="material:ButtonView" ApplyToDerivedTypes="True" CanCascade="True" BaseResourceKey="UraniumUI.Material.Controls.ButtonView.Base">
         <Setter Property="StrokeShape" Value="{RoundRectangle 300, 0, 300, 0}"/>
         <Setter Property="Stroke" Value="Transparent"/>

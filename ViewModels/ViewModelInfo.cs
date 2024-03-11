@@ -27,6 +27,7 @@ public partial class ViewModelInfo : ObservableObject
 
     [ObservableProperty] private float mediaInit;
     [ObservableProperty] private float? mediaPost;
+    [ObservableProperty] private bool absent;
     [ObservableProperty] private bool contestat;
     [ObservableProperty] private bool rezultat;
     
@@ -47,6 +48,7 @@ public partial class ViewModelInfo : ObservableObject
         
         MediaInit = elev.MediaInit;
         MediaPost = elev.MediaPost;
+        Absent = elev.Absent;
         Contestat = elev.Contestat;
         Rezultat = elev.Rezultat;
 
@@ -59,6 +61,7 @@ public partial class ViewModelInfo : ObservableObject
         await AdmitereDatabase.StergereElevAsync(_nrcrt);
         var elevSters = (Constants.Elevi ?? throw new InvalidOperationException()).FirstOrDefault(e => e.NrCrt == _nrcrt);
         Constants.Elevi.Remove(elevSters!);
+        if (Constants.Elevi.Count == 0) Constants.ModelAfisareEleviRef.Gol = true;
         await MopupService.Instance.PopAsync();
     }
 }

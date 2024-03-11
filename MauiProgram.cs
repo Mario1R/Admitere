@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using CommunityToolkit.Maui;
+using Microsoft.Extensions.Logging;
 using Mopups.Hosting;
 using UraniumUI;
 
@@ -15,6 +16,7 @@ public static class MauiProgram
             .UseUraniumUIMaterial()
             .ConfigureMopups()
             .UseUraniumUIBlurs()
+            .UseMauiCommunityToolkit()
             .ConfigureFonts(fonts =>
             {
                 fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");

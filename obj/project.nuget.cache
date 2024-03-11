@@ -1,12 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "DtIgeVw2ADzJFvPRpvTCdiGyDb3BYrh8Jy2B5kq2/jvEaoIYe44hUddldfObYk8hYbdw8kl4N+XluKasBQbfYQ==",
+  "dgSpecHash": "8xIcariTrkRYUYqEWNTtQowKc7pbV2LUI8XokjVj+RsM5zb4qkQNmBQj1lUcKz6OWxa4ZC305pjs6/10W4+zjQ==",
   "success": true,
   "projectFilePath": "D:\\Apps\\Admitere\\Admitere\\Admitere.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\raduu\\.nuget\\packages\\akgul.maui.datagrid\\4.0.1\\akgul.maui.datagrid.4.0.1.nupkg.sha512",
     "C:\\Users\\raduu\\.nuget\\packages\\asyncawaitbestpractices\\6.0.4\\asyncawaitbestpractices.6.0.4.nupkg.sha512",
     "C:\\Users\\raduu\\.nuget\\packages\\bouncycastle.cryptography\\2.1.1\\bouncycastle.cryptography.2.1.1.nupkg.sha512",
+    "C:\\Users\\raduu\\.nuget\\packages\\communitytoolkit.maui\\7.0.1\\communitytoolkit.maui.7.0.1.nupkg.sha512",
+    "C:\\Users\\raduu\\.nuget\\packages\\communitytoolkit.maui.core\\7.0.1\\communitytoolkit.maui.core.7.0.1.nupkg.sha512",
     "C:\\Users\\raduu\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.2\\communitytoolkit.mvvm.8.2.2.nupkg.sha512",
     "C:\\Users\\raduu\\.nuget\\packages\\gembox.spreadsheet\\49.0.1623\\gembox.spreadsheet.49.0.1623.nupkg.sha512",
     "C:\\Users\\raduu\\.nuget\\packages\\googlegson\\2.10.1.4\\googlegson.2.10.1.4.nupkg.sha512",
@@ -65,6 +67,7 @@
     "C:\\Users\\raduu\\.nuget\\packages\\system.reflection.emit.lightweight\\4.7.0\\system.reflection.emit.lightweight.4.7.0.nupkg.sha512",
     "C:\\Users\\raduu\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\raduu\\.nuget\\packages\\system.runtime.interopservices.nfloat.internal\\6.0.1\\system.runtime.interopservices.nfloat.internal.6.0.1.nupkg.sha512",
+    "C:\\Users\\raduu\\.nuget\\packages\\system.speech\\8.0.0-rc.2.23479.6\\system.speech.8.0.0-rc.2.23479.6.nupkg.sha512",
     "C:\\Users\\raduu\\.nuget\\packages\\system.text.encoding.codepages\\6.0.0\\system.text.encoding.codepages.6.0.0.nupkg.sha512",
     "C:\\Users\\raduu\\.nuget\\packages\\uraniumui\\2.7.4\\uraniumui.2.7.4.nupkg.sha512",
     "C:\\Users\\raduu\\.nuget\\packages\\uraniumui.blurs\\2.7.4\\uraniumui.blurs.2.7.4.nupkg.sha512",

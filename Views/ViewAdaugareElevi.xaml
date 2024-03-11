@@ -22,63 +22,57 @@
                 <StackLayout Spacing="3" Orientation="Vertical">
                     <Grid ColumnSpacing="7" ColumnDefinitions="180, 80">
                         <material:TextField FontFamily="Robo" Title="Nume și Inițiala Tatălui" Text="{Binding Nume}" FontSize="17.5" TextColor="#323643" TitleColor="#323643" BorderColor="#323643" AccentColor="#606470" Grid.Column="0">
-                            <validation:RequiredValidation/>
                             <validation:LettersOnlyValidation/>
                         </material:TextField>
                         <material:TextField FontFamily="Robo" Text="{Binding Initiala}" FontSize="17.5" TextColor="#323643" TitleColor="#323643" BorderColor="#323643" AccentColor="#606470" Grid.Column="1">
-                            <validation:RequiredValidation/>
                             <validation:LettersOnlyValidation/>
                         </material:TextField>
                     </Grid>
                     <material:TextField FontFamily="Robo" Title="Prenume" Text="{Binding Prenume}" FontSize="17.5" TextColor="#323643" TitleColor="#323643" BorderColor="#323643" AccentColor="#606470">
-                        <validation:RequiredValidation/>
                         <validation:LettersOnlyValidation/>
                     </material:TextField>
                     <material:AutoCompleteTextField Title="Școala" ItemsSource="{Binding Scoli}" Text="{Binding Scoala}" TextColor="#323643" TitleColor="#323643" BorderColor="#323643" AccentColor="#606470"/>
                 </StackLayout>
                 
-                <BoxView Margin="0,21,0,21" StyleClass="Divider"/>
+                <BoxView Margin="0,20,0,20" StyleClass="Divider"/>
             
                 <Grid ColumnSpacing="7" RowDefinitions="57, 73" ColumnDefinitions="130,130">
                     <material:TextField FontFamily="Robo" Title="Matematică" Text="{Binding MateInit}" FontSize="17.5" TextColor="#323643" TitleColor="#323643" BorderColor="#323643" AccentColor="#606470" Keyboard="Numeric" Grid.Row="0" Grid.Column="0"
                                         Icon="{FontImageSource FontFamily=MaterialOutlined, Color=#323643, Glyph={x:Static uranium:MaterialOutlined.Exposure}}">
-                        <validation:RequiredValidation/>
+                        <validation:MaxValueValidation MaxValue="10"/>
                         <validation:NumericValidation/>
                     </material:TextField>
                     <material:TextField FontFamily="Robo" Title="Romănă" Text="{Binding RoInit}" FontSize="17.5" TextColor="#323643" TitleColor="#323643" BorderColor="#323643" AccentColor="#606470" Keyboard="Numeric" Grid.Row="0" Grid.Column="1"
                                         Icon="{FontImageSource FontFamily=MaterialOutlined, Color=#323643, Glyph={x:Static uranium:MaterialOutlined.Auto_stories}}">
-                        <validation:RequiredValidation/>
+                        <validation:MaxValueValidation MaxValue="10"/>
                         <validation:NumericValidation/>
                     </material:TextField>
                 
                     <material:TextField FontFamily="Robo" Title="Matematică (contestație)" Text="{Binding MatePost}" FontSize="17.5" TextColor="#323643" TitleColor="#323643" BorderColor="#323643" AccentColor="#606470" Keyboard="Numeric" Grid.Row="1" Grid.Column="0">
-                        <validation:RequiredValidation/>
+                        <validation:MaxValueValidation MaxValue="10"/>
                         <validation:NumericValidation/>
                     </material:TextField>
                     <material:TextField FontFamily="Robo" Title="Română (contestație)" Text="{Binding RoPost}" FontSize="17.5" TextColor="#323643" TitleColor="#323643" BorderColor="#323643" AccentColor="#606470" Keyboard="Numeric" Grid.Row="1" Grid.Column="1">
-                        <validation:RequiredValidation/>
+                        <validation:MaxValueValidation MaxValue="10"/>
                         <validation:NumericValidation/>
                     </material:TextField>
                 </Grid>
                 
-                <BoxView Margin="0,21,0,21" StyleClass="Divider"/>
+                <BoxView Margin="0,20,0,20" StyleClass="Divider"/>
             
                 <StackLayout Spacing="3" Orientation="Vertical">
                     <material:TextField FontFamily="Robo" Title="Media Inițială" Text="{Binding MediaInit}" FontSize="17.5" TextColor="#323643" TitleColor="#323643" BorderColor="#323643" AccentColor="#606470" Keyboard="Numeric">
-                        <validation:RequiredValidation/>
                         <validation:NumericValidation/>
                     </material:TextField>
                     <material:TextField FontFamily="Robo" Title="Media Finală" Text="{Binding MediaPost}" FontSize="17.5" TextColor="#323643" TitleColor="#323643" BorderColor="#323643" AccentColor="#606470" Keyboard="Numeric">
-                        <validation:RequiredValidation/>
                         <validation:NumericValidation/>
                     </material:TextField>
                 </StackLayout>
                 
-                <BoxView Margin="0,21,0,21" StyleClass="Divider"/>
+                <BoxView Margin="0,20,0,20" StyleClass="Divider"/>
             
-                <Grid RowDefinitions="57,60,60" ColumnDefinitions="135, 135">
+                <Grid RowDefinitions="57,100" ColumnDefinitions="135, 135">
                     <material:TextField FontFamily="Robo" Title="CNP" Text="{Binding Cnp}" FontSize="17.5" TextColor="#323643" TitleColor="#323643" BorderColor="#323643" AccentColor="#606470" Grid.Row="0" Grid.Column="1">
-                        <validation:RequiredValidation/>
                         <validation:DigitsOnlyValidation/>
                         <validation:MinLengthValidation MinLength="13"/>
                         <validation:MaxLengthValidation MaxLength="13"/>
@@ -86,7 +80,12 @@
                     <material:TextField FontFamily="Robo" Title="COD" Text="{Binding Cod}" FontSize="17.5" TextColor="#323643" TitleColor="#323643" BorderColor="#323643" AccentColor="#606470" Grid.Row="1" Grid.Column="1"
                                         Icon="{FontImageSource FontFamily=MaterialOutlined, Color=#323643, Glyph={x:Static uranium:MaterialOutlined.Vpn_key}}"/>
                     
-                    <VerticalStackLayout Grid.Row="0" Grid.RowSpan="2" Grid.Column="0" VerticalOptions="Center" x:Name="Eroare" IsVisible="False">
+                    <HorizontalStackLayout ZIndex="3" Spacing="19" Grid.Column="1" Grid.Row="1" Margin="6,50,0,0">
+                        <CheckBox IsChecked="{Binding Absent}" Color="#323643" VerticalOptions="Start"/>
+                        <Label Text="Absent" TextColor="#323643" FontFamily="Robo" FontSize="17.5" Margin="0,12,0,0" VerticalOptions="Start"/>
+                    </HorizontalStackLayout>
+                    
+                    <VerticalStackLayout Grid.Row="0" Grid.RowSpan="2" Grid.Column="0" VerticalOptions="Start" x:Name="Eroare" IsVisible="False" Margin="0,27,0,0">
                         <Image WidthRequest="40" Source="incomplete_circle_0fill_300weight.png" HorizontalOptions="Center"/>
                         <Label Text="Incomplet" FontFamily="Robo" FontSize="17.5" TextColor="#450000" HorizontalOptions="Center"/>
                     </VerticalStackLayout>

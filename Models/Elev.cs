@@ -29,6 +29,8 @@ public partial class Elev
     
     public string? Clasa { get; set; }
     
+    public bool Absent { get; set; }
+    
     
     [RelayCommand]
     public async void InfoElev()

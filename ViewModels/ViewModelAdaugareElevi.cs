@@ -20,13 +20,105 @@ public partial class ViewModelAdaugareElevi : ObservableObject, INotifyPropertyC
     private VerticalStackLayout _eroare;
     public ObservableCollection<string>? Scoli { get; set; } = [];
     
-    [ObservableProperty] private string? nume;
-    [ObservableProperty] private string? initiala;
-    [ObservableProperty] private string? prenume;
-    [ObservableProperty] private string? scoala;
-    [ObservableProperty] private string? cod;
-    [ObservableProperty] private string? cnp;
-    [ObservableProperty] private bool rezultat;
+    private bool _absent;
+
+    public bool Absent
+    {
+        get => _absent;
+        set
+        {
+            if (_absent != value)
+            {
+                _absent = value;
+                OnPropertyChanged();
+            }
+        }
+    }
+    
+    private string _cnp;
+    public string Cnp
+    {
+        get => _cnp;
+        set
+        {
+            if (_cnp != value)
+            {
+                _cnp = value;
+                OnPropertyChanged();
+            }
+        }
+    }
+    
+    private string _cod;
+    public string Cod
+    {
+        get => _cod;
+        set
+        {
+            if (_cod != value)
+            {
+                _cod = value;
+                OnPropertyChanged();
+            }
+        }
+    }
+    
+    private string _scoala;
+    public string Scoala
+    {
+        get => _scoala;
+        set
+        {
+            if (_scoala != value)
+            {
+                _scoala = value;
+                OnPropertyChanged();
+            }
+        }
+    }
+    
+    private string _prenume;
+    public string Prenume
+    {
+        get => _prenume;
+        set
+        {
+            if (_prenume != value)
+            {
+                _prenume = value;
+                OnPropertyChanged();
+            }
+        }
+    }
+    
+    private string _nume;
+    public string Nume
+    {
+        get => _nume;
+        set
+        {
+            if (_nume != value)
+            {
+                _nume = value;
+                OnPropertyChanged();
+            }
+        }
+    }
+
+    private string _initiala;
+
+    public string Initiala
+    {
+        get => _initiala;
+        set
+        {
+            if (_initiala != value)
+            {
+                _initiala = value;
+                OnPropertyChanged();
+            }
+        }
+    }
     
 #region NOTE_INIT
     private float _mateInit;
@@ -134,7 +226,7 @@ public ViewModelAdaugareElevi(VerticalStackLayout eroare)
             _elev.Nume = Nume; _elev.Initiala = Initiala; _elev.Prenume = Prenume; _elev.Scoala = Scoala;
             _elev.MateInit = MateInit; _elev.RoInit = RoInit; _elev.MediaInit = MediaInit;
             _elev.MatePost = MatePost; _elev.RoPost = RoPost; _elev.MediaPost = MediaPost;
-            _elev.Cnp = Cnp; _elev.Cod = Cod; _elev.Rezultat = Rezultat;
+            _elev.Cnp = Cnp; _elev.Cod = Cod; _elev.Absent = Absent;
 
             if (_elev.MediaPost != 0)
             {
@@ -145,7 +237,13 @@ public ViewModelAdaugareElevi(VerticalStackLayout eroare)
             else if (_elev.MediaInit >= 6) _elev.Rezultat = true;
         
             await AdmitereDatabase.AdaugareElevAsync(_elev);
+            Constants.ModelAfisareEleviRef.Gol = false;
             Constants.Elevi?.Add(_elev);
+
+            Nume = ""; Initiala = ""; Prenume = ""; Scoala = "";
+            MateInit = 0; RoInit = 0; MediaInit = 0;
+            MatePost = 0; RoPost = 0; MediaPost = 0;
+            Cnp = ""; Cod = ""; Absent = false;
             
             //await _adaugareEleviPanel.TranslateTo(-5, 0, 25, Easing.Linear);
             //await _adaugareEleviPanel.TranslateTo(0, 0, 25, Easing.Linear);

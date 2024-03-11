@@ -13,11 +13,13 @@
         <Image Margin="87,40,0,0" WidthRequest="40" VerticalOptions="Start" HorizontalOptions="Start" IsVisible="False" x:Name="Back" Source="arrow_back_0fill_300weight.png" >
             <Image.GestureRecognizers>
                 <TapGestureRecognizer Tapped="AfiseazaElevi"/>
+                <PointerGestureRecognizer PointerEntered="PointerInElevi" PointerExited="PointerOutElevi"></PointerGestureRecognizer>
             </Image.GestureRecognizers>
         </Image>
         <Image Margin="0, 40, 83, 0" WidthRequest="40" VerticalOptions="Start" HorizontalOptions="End" IsVisible="False" x:Name="Forth" Source="arrow_forward_0fill_300weight.png" >
             <Image.GestureRecognizers>
                 <TapGestureRecognizer Tapped="AfiseazaClase"/>
+                <PointerGestureRecognizer PointerEntered="PointerInClase" PointerExited="PointerOutClase"></PointerGestureRecognizer>
             </Image.GestureRecognizers>
         </Image>
         <Image Margin="0,15,0,0" WidthRequest="70" VerticalOptions="Start" x:Name="Logo" Source="moisil_icon.png">
@@ -25,9 +27,10 @@
                 <PointerGestureRecognizer PointerEntered="PointerInLogo" PointerExited="PointerOutLogo"/>
             </Image.GestureRecognizers>
         </Image>
-        <Image Margin="0,0,0,71" WidthRequest="40" VerticalOptions="End" Source="excel.png">
+        <Image Margin="0,0,0,71" WidthRequest="40" VerticalOptions="End" Source="excel.png" x:Name="ExcelIcon">
             <Image.GestureRecognizers>
                 <TapGestureRecognizer Tapped="CreateExcel"/>
+                <PointerGestureRecognizer PointerEntered="PointerInExcel" PointerExited="PointerOutExcel"></PointerGestureRecognizer>
             </Image.GestureRecognizers>
         </Image>
         <views:ViewTabs Grid.Column="0" Grid.ColumnSpan="2"/>
