@@ -28,7 +28,7 @@
                 </StackLayout>
             </StackLayout>
             
-            <BoxView StyleClass="Divider" Margin="20,150,45,0" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"/>
+            <BoxView StyleClass="Divider" Margin="20,182,45,0" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"/>
             
             <StackLayout Orientation="Vertical" HorizontalOptions="Start" Spacing="0" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Margin="35,2.5,0,0">
                 <Label TextColor="#EEEEEE" FontSize="17" FontFamily="Robo" Text="{Binding MediaInit, StringFormat='Media Inițială: {0}'}"/>

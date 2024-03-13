@@ -85,7 +85,7 @@
                         <Label Text="Absent" TextColor="#323643" FontFamily="Robo" FontSize="17.5" Margin="0,12,0,0" VerticalOptions="Start"/>
                     </HorizontalStackLayout>
                     
-                    <VerticalStackLayout Grid.Row="0" Grid.RowSpan="2" Grid.Column="0" VerticalOptions="Start" x:Name="Eroare" IsVisible="False" Margin="0,27,0,0">
+                    <VerticalStackLayout Margin="0,27,0,0" VerticalOptions="Start" Grid.Row="0" Grid.RowSpan="2" Grid.Column="0" x:Name="Eroare" IsVisible="False">
                         <Image WidthRequest="40" Source="incomplete_circle_0fill_300weight.png" HorizontalOptions="Center"/>
                         <Label Text="Incomplet" FontFamily="Robo" FontSize="17.5" TextColor="#450000" HorizontalOptions="Center"/>
                     </VerticalStackLayout>

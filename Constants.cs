@@ -9,7 +9,6 @@ namespace Admitere;
 public static class Constants
 {
     private const string DatabaseFilename = "Admitere.db3";
-    private const string EleviExcelName = "Elevi.xlsx";
 
 #pragma warning disable CA2211
     public static ViewAfisareElevi AfisareEleviRef = null!;
@@ -30,7 +29,5 @@ public static class Constants
         SQLite.SQLiteOpenFlags.ReadWrite |
         SQLite.SQLiteOpenFlags.Create |
         SQLite.SQLiteOpenFlags.SharedCache;
-
-    public static string EleviExcelPath => Path.Combine(SpecialDirectories.MyDocuments, EleviExcelName);
     public static string DatabasePath => Path.Combine(SpecialDirectories.MyDocuments, DatabaseFilename);
 }

@@ -14,6 +14,7 @@ using CommunityToolkit.Mvvm.Input;
 // ReSharper disable UnusedMember.Local
 namespace Admitere.ViewModels;
 
+// ReSharper disable once PartialTypeWithSinglePart
 public partial class ViewModelAdaugareElevi : ObservableObject, INotifyPropertyChanged
 {
     private Elev _elev = new();
@@ -202,7 +203,9 @@ public partial class ViewModelAdaugareElevi : ObservableObject, INotifyPropertyC
     private float _notePost;
 #endregion
 
+#pragma warning disable CS8618
 public ViewModelAdaugareElevi(VerticalStackLayout eroare)
+#pragma warning restore CS8618
 {
     _eroare = eroare;
 #pragma warning disable CS4014
@@ -239,15 +242,13 @@ public ViewModelAdaugareElevi(VerticalStackLayout eroare)
             await AdmitereDatabase.AdaugareElevAsync(_elev);
             Constants.ModelAfisareEleviRef.Gol = false;
             Constants.Elevi?.Add(_elev);
+            await Constants.ModelAfisareClaseRef.AfisareClase();
 
             Nume = ""; Initiala = ""; Prenume = ""; Scoala = "";
             MateInit = 0; RoInit = 0; MediaInit = 0;
             MatePost = 0; RoPost = 0; MediaPost = 0;
             Cnp = ""; Cod = ""; Absent = false;
-            
-            //await _adaugareEleviPanel.TranslateTo(-5, 0, 25, Easing.Linear);
-            //await _adaugareEleviPanel.TranslateTo(0, 0, 25, Easing.Linear);
-;        }
+        }
     }
 
     private async Task AfisareScoli()

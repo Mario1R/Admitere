@@ -2,7 +2,7 @@ namespace Admitere.Models;
 
 public class Profesor
 {
-    public string Nume { get; set; }
-    public string Prenume { get; set; }
-    public string Parola { get; set; }
+    public string Nume { get; init; } = null!;
+    public string Prenume { get; init; } = null!;
+    public string Parola { get; init; } = null!;
 }

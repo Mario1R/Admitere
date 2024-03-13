@@ -29,13 +29,13 @@
     <AppXManifest Include="D:\Apps\Admitere\Admitere\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-03-11T21:26:13.762</Modified>
+      <Modified>2024-03-12T16:05:34.688</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\Apps\Admitere\Admitere\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-03-11T21:12:26.986</Modified>
+      <Modified>2024-03-12T16:05:34.397</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Apps\Admitere\Admitere\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Admitere.runtimeconfig.json">
       <PackagePath>Admitere.runtimeconfig.json</PackagePath>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Apps\Admitere\Admitere\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Admitere.dll">
       <PackagePath>Admitere.dll</PackagePath>
-      <Modified>2024-03-11T21:26:12.155</Modified>
+      <Modified>2024-03-12T16:05:33.306</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Apps\Admitere\Admitere\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>Admitere.exe</PackagePath>
-      <Modified>2024-03-11T21:26:12.210</Modified>
+      <Modified>2024-03-12T16:05:33.322</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Apps\Admitere\Admitere\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>

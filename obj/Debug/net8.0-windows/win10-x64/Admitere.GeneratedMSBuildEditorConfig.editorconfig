@@ -1,0 +1,79 @@
+is_global = true
+build_property.TargetFramework = net8.0-windows
+build_property.TargetPlatformMinVersion = 7.0
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Admitere
+build_property.ProjectDir = D:\Apps\Admitere\Admitere\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+
+[D:/Apps/Admitere/Admitere/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Admitere.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[D:/Apps/Admitere/Admitere/Pages/PageAfisare.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Admitere.Pages.PageAfisare.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\PageAfisare.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\PageAfisare.xaml
+
+[D:/Apps/Admitere/Admitere/Popups/PopupAdaugareClase.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Admitere.Popups.PopupAdaugareClase.xaml
+build_metadata.AdditionalFiles.TargetPath = Popups\PopupAdaugareClase.xaml
+build_metadata.AdditionalFiles.RelativePath = Popups\PopupAdaugareClase.xaml
+
+[D:/Apps/Admitere/Admitere/Popups/PopupAutentificare.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Admitere.Popups.PopupAutentificare.xaml
+build_metadata.AdditionalFiles.TargetPath = Popups\PopupAutentificare.xaml
+build_metadata.AdditionalFiles.RelativePath = Popups\PopupAutentificare.xaml
+
+[D:/Apps/Admitere/Admitere/Popups/PopupInfo.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Admitere.Popups.PopupInfo.xaml
+build_metadata.AdditionalFiles.TargetPath = Popups\PopupInfo.xaml
+build_metadata.AdditionalFiles.RelativePath = Popups\PopupInfo.xaml
+
+[D:/Apps/Admitere/Admitere/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Admitere.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[D:/Apps/Admitere/Admitere/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Admitere.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[D:/Apps/Admitere/Admitere/Views/ViewAdaugareElevi.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Admitere.Views.ViewAdaugareElevi.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ViewAdaugareElevi.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ViewAdaugareElevi.xaml
+
+[D:/Apps/Admitere/Admitere/Views/ViewAfisareClase.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Admitere.Views.ViewAfisareClase.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ViewAfisareClase.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ViewAfisareClase.xaml
+
+[D:/Apps/Admitere/Admitere/Views/ViewAfisareElevi.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Admitere.Views.ViewAfisareElevi.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ViewAfisareElevi.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ViewAfisareElevi.xaml
+
+[D:/Apps/Admitere/Admitere/Views/ViewTabs.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Admitere.Views.ViewTabs.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ViewTabs.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ViewTabs.xaml

@@ -1,0 +1,6 @@
+D:\Apps\Admitere\Admitere\obj\Debug\net8.0-windows\win10-x64\Admitere.csproj.AssemblyReference.cache
+D:\Apps\Admitere\Admitere\obj\Debug\net8.0-windows\win10-x64\Admitere.GeneratedMSBuildEditorConfig.editorconfig
+D:\Apps\Admitere\Admitere\obj\Debug\net8.0-windows\win10-x64\Admitere.AssemblyInfoInputs.cache
+D:\Apps\Admitere\Admitere\obj\Debug\net8.0-windows\win10-x64\Admitere.AssemblyInfo.cs
+D:\Apps\Admitere\Admitere\obj\Debug\net8.0-windows\win10-x64\Admitere.csproj.CoreCompileInputs.cache
+D:\Apps\Admitere\Admitere\obj\Debug\net8.0-windows\win10-x64\Admitere.sourcelink.json

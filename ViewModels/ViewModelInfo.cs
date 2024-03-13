@@ -12,7 +12,7 @@ namespace Admitere.ViewModels;
 public partial class ViewModelInfo : ObservableObject
 {
     private readonly int _nrcrt;
-    [ObservableProperty] private string? nume = null!;
+    [ObservableProperty] private string nume = null!;
     [ObservableProperty] private string initiala = null!;
     [ObservableProperty] private string prenume = null!;
     [ObservableProperty] private string scoala = null!;
@@ -61,6 +61,7 @@ public partial class ViewModelInfo : ObservableObject
         await AdmitereDatabase.StergereElevAsync(_nrcrt);
         var elevSters = (Constants.Elevi ?? throw new InvalidOperationException()).FirstOrDefault(e => e.NrCrt == _nrcrt);
         Constants.Elevi.Remove(elevSters!);
+        await Constants.ModelAfisareClaseRef.AfisareClase();
         if (Constants.Elevi.Count == 0) Constants.ModelAfisareEleviRef.Gol = true;
         await MopupService.Instance.PopAsync();
     }

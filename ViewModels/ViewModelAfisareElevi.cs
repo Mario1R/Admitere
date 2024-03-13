@@ -1,16 +1,16 @@
 using System.Collections.ObjectModel;
-using System.ComponentModel;
-using System.Runtime.CompilerServices;
 using Admitere.DBs;
 using Admitere.Models;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 // ReSharper disable CollectionNeverQueried.Global
 // ReSharper disable MemberCanBePrivate.Global
+// ReSharper disable InconsistentNaming
 namespace Admitere.ViewModels;
 
-public partial class ViewModelAfisareElevi : ObservableObject, INotifyPropertyChanged
+public partial class ViewModelAfisareElevi : ObservableObject
 {
+    
     [ObservableProperty] private bool gol;
     
     public ObservableCollection<Elev>? Elevi { get; set; } = [];
@@ -28,7 +28,7 @@ public partial class ViewModelAfisareElevi : ObservableObject, INotifyPropertyCh
     {
         foreach (var elev in await AdmitereDatabase.AfisareEleviAsync())
             Elevi?.Add(elev);
-        if (Elevi.Count != 0) Gol = false;
+        if (Elevi != null && Elevi.Count != 0) Gol = false;
         Constants.Elevi = Elevi;
     }
 }   
